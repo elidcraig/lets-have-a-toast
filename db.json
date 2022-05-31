@@ -92,7 +92,7 @@
 }
 ],
 
-"Toastimonials" : [
+"toastimonials" : [
 {
 	"id": 1,
 	"toastimonial": "The perfect cronch"
@@ -135,7 +135,7 @@
 }
 ],
 
-"Recipes" : [
+"recipes" : [
 {
 "id": 1,
 "name": "PB & J",
