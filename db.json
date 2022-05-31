@@ -1,19 +1,170 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+"bread": [
+{
+"id": 1,
+"name": "multigrain"
+},
+{
+"id": 2,
+"name": "white"
+},
+{
+"id": 3,
+"name": "baguette"
+},
+{
+"id": 4,
+"name": "sourdough"
+},
+{
+"id": 5,
+"name": "rye"
+}
+],
+
+
+"savoryToppings": [
+{
+"id": 1,
+"name": "avocado"
+},
+{
+"id": 2,
+"name": "hummus"
+},
+{
+"id": 3,
+"name": "salted butter"
+},
+{
+"id": 4,
+"name": "cream cheese"
+},
+{
+"id": 5,
+"name": "fried egg"
+}
+],
+
+"sweetToppings": [
+{
+"id": 1,
+"name": "cinnamon & sugar"
+},
+{
+"id": 2,
+"name": "honey"
+},
+{
+"id": 3,
+"name": "peanut butter"
+},
+{
+"id": 4,
+"name": "fresh fruit"
+},
+{
+"id": 5,
+"name": "jam"
+}
+],
+
+"toastLevel": [
+{
+"id": 1,
+"level": "Level 1: leave it cold"
+},
+{
+"id": 2,
+"level": "Level 2: warm it slightly"
+},
+{
+"id": 3,
+"level": "Level 3: toast it to golden perfection"
+},
+{
+"id": 4,
+"level": "Level 4: leave it till a little past golden"
+},
+{
+"id": 5,
+"level": "Level 5: burn it"
+}
+],
+
+"Toastimonials" : [
+{
+	"id": 1,
+	"toastimonial": "The perfect cronch"
+},
+{
+	"id": 2,
+	"toastimonial": "Buttery goodness"
+},
+{
+	"id": 3,
+	"toastimonial": "The perfect array of colors"
+},
+{
+	"id": 4,
+	"toastimonial": "The object of all my desires"
+},
+{
+	"id": 5,
+	"toastimonial": "A delectable amount of rise"
+},
+{
+	"id": 6,
+	"toastimonial": "So much happiness in the palm of my hand"
+},
+{
+	"id": 7,
+	"toastimonial": "The sourest of Sourdough’s"
+},
+{
+	"id": 8,
+	"toastimonial": "Flaky goodness"
+},
+{
+	"id": 9,
+	"toastimonial": "TOASTTTTTTTTTT"
+},
+{
+	"id": 10,
+	"toastimonial": "It’s toast, how can it get better?"
+}
+],
+
+"Recipes" : [
+{
+"id": 1,
+"name": "PB & J",
+"recipeDetails": "peanut butter, jam or jelly",
+"notes": "A timeless classic"
+},
+{
+"id": 2,
+"name": "PB & Pickle",
+"recipeDetails": "creamy peanut butter, dill pickle slices",
+"notes": "Beautiful combo of sweet and salty. Nice textures."
+},
+{
+"id": 3,
+"name": "Avocado",
+"recipeDetails": "Smashed avocado, salt & pepper, additional toppings as desired",
+"notes": "Filling, savory, the perfect amount of bougie"
+},
+{
+"id": 4,
+"name": "Peach & Basil",
+"recipeDetails": "whipped cream cheese, canned peach slices, fresh basil, a drizzle of balsamic",
+"notes": "Too much? never."
+},
+{
+"id": 5,
+"name": "Cinnamon & Sugar",
+"recipeDetails": "salted butter, cinnamon, sugar",
+"notes": "A childhood favorite. Perfect for all ages."
+}
+]
 }
