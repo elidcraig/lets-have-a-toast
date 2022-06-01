@@ -1,4 +1,4 @@
-.toastimonials {
+.featured-toast {
   text-align: center;
   margin: 80px 15vw;
   border-style: solid;
@@ -7,7 +7,11 @@
   border-radius: 30px;
 }
 
-.toastimonials__card{
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+.featured-toast__img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.featured-toast img {
+  max-width: 55vw;
 }

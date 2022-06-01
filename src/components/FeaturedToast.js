@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './FeaturedToast.css'
 
 function FeaturedToast() {
   const [featured, setFeatured] = useState({})
@@ -13,8 +14,10 @@ function FeaturedToast() {
     <div className='featured-toast'>
       <h1>Featured Toast</h1>
       <h3>{featured.name}</h3>
-      <img src='' />
-      <small>{featured.notes}</small>
+      <div className='featured-toast__img-wrapper'>
+        <img src='https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/cottage-cheese-peach-cinnamon-honey-toast-combinations.jpg?quality=82&strip=all' />
+      </div>
+        <small>{featured.notes}</small>
       <p>{featured.recipeDetails}</p>
     </div>
   );
