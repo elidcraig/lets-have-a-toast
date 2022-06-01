@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import './Toastimonials.css'
 
 function Toastimonials() {
   const [toastimonials, setToastimonials] = useState([])
@@ -9,15 +10,18 @@ function Toastimonials() {
       .then(data => setToastimonials(data))
   }, [])
 
-  const listItems = toastimonials.map(item => <li key={item.id}>{item.toastimonial}</li>)
+  const listItems = toastimonials.map(item => 
+    <div className='toastimonials__card' key={item.id}><p>"{item.toastimonial}"</p></div>)
 
+  //would love to implement bootstrap carousel if possible
   return (
     <div className='toastimonials'>
       <h4>TOASTIMONIALS</h4>
-      <ul className='toastimonials__list'>
+      <div className='toastimonials__list'>
         {listItems}
-      </ul>
+      </div>
     </div>
+    
   );
 }
 
