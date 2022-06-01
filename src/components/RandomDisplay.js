@@ -1,50 +1,75 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function RandomDisplay() {
+  const [ingredientObject, setIngredientObject] = useState({});
+
   const [toastLevel, setToastLevel] = useState('Golden');
   const [secondTopping, setSecondTopping] = useState('Fresh fruit');
   const [firstTopping, setFirstTopping] = useState('PB');
   const [bread, setBread] = useState('Multigrain');
 
   function randomSelector() {
-    const randomResult = { array }[
-      Math.floor(Math.random() * { array }.length)
-    ];
+    const randomResult = {}[Math.floor(Math.random() * {}.length)];
   }
 
-  function generateToastLevel() {
-    fetch('http://localhost:3000/toastLevel/')
+  useEffect(() => {
+    fetch('http://localhost:3000/ingredients')
       .then((response) => response.json())
-      .then(setToastLevel);
+      .then(setIngredientObject);
+  }, []);
+
+  function generateToastLevel(e) {
+    const randomResult =
+      ingredientObject.toastLevel[
+        Math.floor(Math.random() * ingredientObject.toastLevel.length)
+      ];
+
+    setToastLevel(randomResult);
+  }
+  function generateSecondTopping(e) {
+    const randomResult =
+      ingredientObject.secondTopping[
+        Math.floor(Math.random() * ingredientObject.secondTopping.length)
+      ];
+
+    setSecondTopping(randomResult);
   }
 
-  function generateSecondTopping() {
-    fetch('http://localhost:3000/savoryToppings/')
-      .then((response) => response.json())
-      .then(setSecondTopping);
+  function generateFirstTopping(e) {
+    const randomResult =
+      ingredientObject.firstTopping[
+        Math.floor(Math.random() * ingredientObject.firstTopping.length)
+      ];
+
+    setFirstTopping(randomResult);
   }
 
-  function generateFirstTopping() {
-    fetch('http://localhost:3000/sweetToppings/')
-      .then((response) => response.json())
-      .then(setFirstTopping);
-  }
+  function generateBread(e) {
+    const randomResult =
+      ingredientObject.bread[
+        Math.floor(Math.random() * ingredientObject.bread.length)
+      ];
 
-  function generateBread() {
-    fetch('http://localhost:3000/toastLevel/')
-      .then((response) => response.json())
-      .then(setBread);
+    setBread(randomResult);
   }
 
   return (
     <div className='randomDisplay'>
-      <button onClick={generateToastLevel}>Toast Level</button>
+      <button id='toastLevel' onClick={generateToastLevel}>
+        Toast Level
+      </button>
       <h1>{toastLevel}</h1>
-      <button onClick={generateSecondTopping}>Second Topping</button>
+      <button id='secondTopping' onClick={generateSecondTopping}>
+        Second Topping
+      </button>
       <h1>{secondTopping}</h1>
-      <button onClick={generateFirstTopping}>First Topping</button>
+      <button id='firstTopping' onClick={generateFirstTopping}>
+        First Topping
+      </button>
       <h1>{firstTopping}</h1>
-      <button onClick={generateBread}>Bread</button>
+      <button id='bread' onClick={generateBread}>
+        Bread
+      </button>
       <h1>{bread}</h1>
     </div>
   );
