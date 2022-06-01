@@ -1,3 +1,13 @@
 .toastimonials {
   text-align: center;
+  margin: 80px 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 30px;
+}
+
+.toastimonials__card{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }

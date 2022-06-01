@@ -11,7 +11,7 @@ function Toastimonials() {
   }, [])
 
   const listItems = toastimonials.map(item => 
-    <div className='toastimonials__card' key={item.id}><p>"{item.toastimonial}"</p></div>)
+    <div className='toastimonials__card' key={item.id}>"{item.toastimonial}"</div>)
 
   //would love to implement bootstrap carousel if possible
   return (
