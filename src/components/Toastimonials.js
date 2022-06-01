@@ -9,9 +9,14 @@ function Toastimonials() {
       .then(data => setToastimonials(data))
   }, [])
 
+  const listItems = toastimonials.map(item => <li key={item.id}>{item.toastimonial}</li>)
+
   return (
     <div className='toastimonials'>
-
+      <h4>TOASTIMONIALS</h4>
+      <ul className='toastimonials__list'>
+        {listItems}
+      </ul>
     </div>
   );
 }
