@@ -3,7 +3,12 @@ import RandomToastForm from '../components/RandomToastForm';
 import RandomDisplay from '../components/RandomDisplay';
 
 function RandomToast() {
-  return;
+  return (
+    <div>
+      <RandomDisplay />
+      <RandomToastForm />
+    </div>
+  );
 }
 
 export default RandomToast;

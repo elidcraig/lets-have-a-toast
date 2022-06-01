@@ -1,52 +1,51 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function RandomDisplay() {
   const [toastLevel, setToastLevel] = useState('Golden');
-  const [secondTopping, setSecondTopping] = useState('PB');
-  const [firstTopping, setFirstTopping] = useState('fresh fruit');
-  const [bread, setBread] = useState('multigrain');
+  const [secondTopping, setSecondTopping] = useState('Fresh fruit');
+  const [firstTopping, setFirstTopping] = useState('PB');
+  const [bread, setBread] = useState('Multigrain');
 
-  function randomSelector() {}
+  function randomSelector() {
+    const randomResult = { array }[
+      Math.floor(Math.random() * { array }.length)
+    ];
+  }
 
   function generateToastLevel() {
-    useEffect(() => {
-      fetch('http://localhost:3000/toastLevel')
-        .then((response) => response.json())
-        .then(setToastLevel);
-    }, []);
+    fetch('http://localhost:3000/toastLevel/')
+      .then((response) => response.json())
+      .then(setToastLevel);
   }
 
   function generateSecondTopping() {
-    useEffect(() => {
-      fetch('http://localhost:3000/toastLevel')
-        .then((response) => response.json())
-        .then(setSecondTopping);
-    }, []);
+    fetch('http://localhost:3000/savoryToppings/')
+      .then((response) => response.json())
+      .then(setSecondTopping);
   }
 
   function generateFirstTopping() {
-    useEffect(() => {
-      fetch('http://localhost:3000/toastLevel')
-        .then((response) => response.json())
-        .then(setFirstTopping);
-    }, []);
+    fetch('http://localhost:3000/sweetToppings/')
+      .then((response) => response.json())
+      .then(setFirstTopping);
   }
 
   function generateBread() {
-    useEffect(() => {
-      fetch('http://localhost:3000/bread')
-        .then((response) => response.json())
-        .then(setBread);
-    }, []);
+    fetch('http://localhost:3000/toastLevel/')
+      .then((response) => response.json())
+      .then(setBread);
   }
 
   return (
     <div className='randomDisplay'>
       <button onClick={generateToastLevel}>Toast Level</button>
-      <span>{toastLevel}</span>
-      <button onClick={generateSecondTopping}>Topping #2</button>
-      <button onClick={generateFirstTopping}>Topping #1</button>
+      <h1>{toastLevel}</h1>
+      <button onClick={generateSecondTopping}>Second Topping</button>
+      <h1>{secondTopping}</h1>
+      <button onClick={generateFirstTopping}>First Topping</button>
+      <h1>{firstTopping}</h1>
       <button onClick={generateBread}>Bread</button>
+      <h1>{bread}</h1>
     </div>
   );
 }
