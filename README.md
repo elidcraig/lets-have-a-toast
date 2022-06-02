@@ -12,3 +12,10 @@ Stretch:
 - Animations
 - Comment on a toast
 - Footer
+
+Thursday goals:
+- New recipe form centered
+- Generator centered
+- Styling on buttons recipes page
+- Change card background color
+- h1 motion animation

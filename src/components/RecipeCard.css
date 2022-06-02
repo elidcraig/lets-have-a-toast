@@ -20,6 +20,16 @@
   border-radius: 30px;
 }
 
+.recipe-card__button {
+  margin: 5px;
+  height: 40px;
+  width: 100px;
+  background-color: #703642;
+  color: white;
+  font-family: monospace;
+  border-radius: 30px; 
+}
+
 @media screen and (max-width: 800px) {
   .recipe-card {
     width: 70vw;
