@@ -32,8 +32,8 @@ button:hover {
     height: 40px;
     width: 100px;
     background-color: #703642;
-    color: white;
     font-family: monospace;
+    color: white;
     float: left;
     border-radius: 30px; 
 }
