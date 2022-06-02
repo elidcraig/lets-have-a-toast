@@ -6,14 +6,13 @@ function FeaturedToast() {
   const [featured, setFeatured] = useState({})
 
   useEffect(() => {
-    fetch('http://localhost:4000/recipes/4')
+    fetch('http://localhost:3000/recipes/4')
       .then(resp => resp.json())
       .then(recipe => setFeatured(recipe))
   }, [])
 
   return (
-    <motion.div className='featured-toast' whileHover={{ scale: 1.02 }} initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+    <motion.div className='featured-toast' whileHover={{ scale: 1.02 }}>
       <h1>Featured Toast</h1>
       <h3>{featured.name}</h3>
       <div className='featured-toast__img-wrapper'>
