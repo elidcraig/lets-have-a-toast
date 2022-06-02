@@ -56,7 +56,6 @@ function RandomDisplay() {
 
   return (
     <div className='randomDisplay'>
-      <header>Let's Have a Toast</header>
       <div className='generatorBox'>
         <h1>{secondTopping}</h1>
         <button
