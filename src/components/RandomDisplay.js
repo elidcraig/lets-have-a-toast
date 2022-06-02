@@ -57,34 +57,36 @@ function RandomDisplay() {
   return (
     <div className='randomDisplay'>
       <header>Let's Have a Toast</header>
-      <h1>{secondTopping}</h1>
-      <button
-        className='generateButton'
-        id='secondTopping'
-        onClick={generateSecondTopping}
-      >
-        Second Topping
-      </button>
-      <h1>{firstTopping}</h1>
-      <button
-        className='generateButton'
-        id='firstTopping'
-        onClick={generateFirstTopping}
-      >
-        First Topping
-      </button>
-      <h1>{bread}</h1>
-      <button className='generateButton' id='bread' onClick={generateBread}>
-        Bread
-      </button>
-      <h1>{toastLevel}</h1>
-      <button
-        className='generateButton'
-        id='toastLevel'
-        onClick={generateToastLevel}
-      >
-        Toast Level
-      </button>
+      <div className='generatorBox'>
+        <h1>{secondTopping}</h1>
+        <button
+          className='generateButton'
+          id='secondTopping'
+          onClick={generateSecondTopping}
+        >
+          Second Topping
+        </button>
+        <h1>{firstTopping}</h1>
+        <button
+          className='generateButton'
+          id='firstTopping'
+          onClick={generateFirstTopping}
+        >
+          First Topping
+        </button>
+        <h1>{bread}</h1>
+        <button className='generateButton' id='bread' onClick={generateBread}>
+          Bread
+        </button>
+        <h1>{toastLevel}</h1>
+        <button
+          className='generateButton'
+          id='toastLevel'
+          onClick={generateToastLevel}
+        >
+          Toast Level
+        </button>
+      </div>
     </div>
   );
 }

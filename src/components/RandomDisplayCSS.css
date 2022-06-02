@@ -12,6 +12,15 @@ body {
     font-family: monospace;
 }
 
+.generatorBox {
+    margin: 5px;
+    background-color: #987456;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 30px;
+}
+
 .generateButton {
     background-color: #78290F;
     color: white;
