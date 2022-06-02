@@ -1,5 +1,5 @@
 {
-"ingredients": {"bread": ["multigrain", "white", "baguette", "sourdough", "rye"], "firstTopping": ["avocado", "hummus", "salted butter", "cream cheese", "fried egg"], "secondTopping": ["cinnamon & sugar", "honey", "peanut butter", "fresh fruit", "jam"], "toastLevel": ["level 1: still cold", "level 2: warmed lightly", "level 3: toasted to golden perfection", "level 4: boarderline over-toasted", "level 5: burnt" ]},
+"ingredients": {"bread": ["multigrain", "white", "baguette", "sourdough", "rye"], "firstTopping": ["avocado", "hummus", "salted butter", "cream cheese", "fried egg", "olive oil"], "secondTopping": ["cinnamon & sugar", "honey", "peanut butter", "fresh fruit", "jam", "jelly", "herbs"], "toastLevel": ["still cold", "warmed slightly", "golden perfection", "burnt" ]},
 
 
 "toastimonials" : [
