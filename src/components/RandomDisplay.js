@@ -9,10 +9,6 @@ function RandomDisplay() {
   const [firstTopping, setFirstTopping] = useState('generate 1st topping');
   const [bread, setBread] = useState('generate bread type');
 
-  function randomSelector() {
-    const randomResult = {}[Math.floor(Math.random() * {}.length)];
-  }
-
   useEffect(() => {
     fetch('http://localhost:3000/ingredients')
       .then((response) => response.json())
@@ -55,45 +51,49 @@ function RandomDisplay() {
   }
 
   return (
-    <div className='randomDisplay'>
-      <h2>Feeling *burnt* out with decisions?</h2>
-      <h2>Let fate decide your next toasty snack!</h2>
-      <div className='generatorBox'>
-        <div className='generatorRow'>
-          <button className='generateButton' id='bread' onClick={generateBread}>
+    <div>
+      <h1>Feeling *burnt* out with decisions?</h1>
+      <h1>Let fate decide your next toasty snack!</h1>
+      <div className='random-display'>
+        <div>
+          <button
+            className='random-display__generate-button'
+            id='bread'
+            onClick={generateBread}
+          >
             Bread
           </button>{' '}
-          <h1>{bread}</h1>
+          <h2>{bread}</h2>
         </div>
-        <div className='generatorRow'>
+        <div>
           <button
-            className='generateButton'
+            className='random-display__generate-button'
             id='toastLevel'
             onClick={generateToastLevel}
           >
             Toast Level
           </button>{' '}
-          <h1>{toastLevel}</h1>
+          <h2>{toastLevel}</h2>
         </div>
         <div className='generatorRow'>
           <button
-            className='generateButton'
+            className='random-display__generate-button'
             id='firstTopping'
             onClick={generateFirstTopping}
           >
             First Topping
           </button>{' '}
-          <h1>{firstTopping}</h1>
+          <h2>{firstTopping}</h2>
         </div>
         <div className='generatorRow'>
           <button
-            className='generateButton'
+            className='random-display__generate-button'
             id='secondTopping'
             onClick={generateSecondTopping}
           >
             Second Topping
           </button>{' '}
-          <h1>{secondTopping}</h1>
+          <h2>{secondTopping}</h2>
         </div>
       </div>
     </div>
