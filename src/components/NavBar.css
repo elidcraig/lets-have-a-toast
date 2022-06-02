@@ -20,6 +20,13 @@ header {
   color: #c24242;
   cursor: pointer;
 }
+.navbar__links a:hover {
+  color: #78290f;
+  transform: scale(1.1);
+}
+.navbar__links a.active {
+  color: #78290f;
+}
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;

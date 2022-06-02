@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import NavBar from '../components/NavBar';
 import RecipeList from "../components/RecipeList.js"
 import NewRecipeForm from "../components/NewRecipeForm"
 
@@ -14,6 +15,8 @@ function Recipes() {
   }, [])
  
   return (
+    <>
+    <NavBar />
     <main>
       <RecipeList recipesArray={recipesArray}/> 
 
@@ -25,7 +28,7 @@ function Recipes() {
       notes
       */}
     </main>
-   
+    <>
   );
 }
 

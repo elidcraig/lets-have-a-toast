@@ -7,7 +7,7 @@ function NavBar() {
     <div className='navbar'>
       <header>Let's Have A Toast</header>
       <div className='navbar__links'>
-        <NavLink to='/'>HOME</NavLink>
+        <NavLink exact to='/'>HOME</NavLink>
         <NavLink to='/recipes'>RECIPES</NavLink>
         <NavLink to='/random'>RANDOM</NavLink>
       </div>
