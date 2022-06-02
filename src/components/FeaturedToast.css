@@ -8,7 +8,7 @@
 }
 
 .featured-toast:hover {
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .featured-toast__img-wrapper {

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {motion} from 'framer-motion'
 import './FeaturedToast.css'
 
 function FeaturedToast() {
@@ -11,7 +12,7 @@ function FeaturedToast() {
   }, [])
 
   return (
-    <div className='featured-toast'>
+    <motion.div className='featured-toast' whileHover={{ scale: 1.02 }}>
       <h1>Featured Toast</h1>
       <h3>{featured.name}</h3>
       <div className='featured-toast__img-wrapper'>
@@ -19,7 +20,7 @@ function FeaturedToast() {
       </div>
       <small>{featured.notes}</small>
       <p>{featured.recipeDetails}</p>
-    </div>
+    </motion.div>
   );
 }
 

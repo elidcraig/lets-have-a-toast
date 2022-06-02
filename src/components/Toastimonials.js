@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {motion} from 'framer-motion'
 import './Toastimonials.css'
 
 function Toastimonials() {
@@ -15,12 +16,12 @@ function Toastimonials() {
 
   //would love to implement bootstrap carousel if possible
   return (
-    <div className='toastimonials'>
+    <motion.div className='toastimonials' whileHover={{ scale: 1.02 }}>
       <h4>TOASTIMONIALS</h4>
       <div className='toastimonials__list'>
         {listItems}
       </div>
-    </div>
+    </motion.div>
     
   );
 }
