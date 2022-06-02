@@ -1,80 +1,108 @@
 {
-"ingredients": {"bread": ["multigrain", "white", "baguette", "sourdough", "rye"], "firstTopping": ["avocado", "hummus", "salted butter", "cream cheese", "fried egg", "olive oil"], "secondTopping": ["cinnamon & sugar", "honey", "peanut butter", "fresh fruit", "jam", "jelly", "herbs"], "toastLevel": ["still cold", "warmed slightly", "golden perfection", "burnt" ]},
-
-
-"toastimonials" : [
-{
-	"id": 1,
-	"toastimonial": "The perfect cronch"
-},
-{
-	"id": 2,
-	"toastimonial": "Buttery goodness"
-},
-{
-	"id": 3,
-	"toastimonial": "The perfect array of colors"
-},
-{
-	"id": 4,
-	"toastimonial": "The object of all my desires"
-},
-{
-	"id": 5,
-	"toastimonial": "A delectable amount of rise"
-},
-{
-	"id": 6,
-	"toastimonial": "So much happiness in the palm of my hand"
-},
-{
-	"id": 7,
-	"toastimonial": "The sourest of Sourdough’s"
-},
-{
-	"id": 8,
-	"toastimonial": "Flaky goodness"
-},
-{
-	"id": 9,
-	"toastimonial": "TOASTTTTTTTTTT"
-},
-{
-	"id": 10,
-	"toastimonial": "It’s toast, how can it get better?"
-}
-],
-
-"recipes" : [
-{
-"id": 1,
-"name": "PB & J",
-"recipeDetails": "peanut butter, jam or jelly",
-"notes": "A timeless classic"
-},
-{
-"id": 2,
-"name": "PB & Pickle",
-"recipeDetails": "creamy peanut butter, dill pickle slices",
-"notes": "Beautiful combo of sweet and salty. Nice textures."
-},
-{
-"id": 3,
-"name": "Avocado",
-"recipeDetails": "Smashed avocado, salt & pepper, additional toppings as desired",
-"notes": "Filling, savory, the perfect amount of bougie"
-},
-{
-"id": 4,
-"name": "Peach & Basil",
-"recipeDetails": "whipped cream cheese, canned peach slices, fresh basil, a drizzle of balsamic",
-"notes": "Too much? never."
-},
-{
-"id": 5,
-"name": "Cinnamon & Sugar",
-"recipeDetails": "salted butter, cinnamon, sugar",
-"notes": "A childhood favorite. Perfect for all ages."
-}
-]
+  "ingredients": {
+    "bread": [
+      "multigrain",
+      "white",
+      "baguette",
+      "sourdough",
+      "rye"
+    ],
+    "firstTopping": [
+      "avocado",
+      "hummus",
+      "salted butter",
+      "cream cheese",
+      "fried egg",
+      "olive oil"
+    ],
+    "secondTopping": [
+      "cinnamon & sugar",
+      "honey",
+      "peanut butter",
+      "fresh fruit",
+      "jam",
+      "jelly",
+      "herbs"
+    ],
+    "toastLevel": [
+      "still cold",
+      "warmed slightly",
+      "golden perfection",
+      "burnt"
+    ]
+  },
+  "toastimonials": [
+    {
+      "id": 1,
+      "toastimonial": "The perfect cronch"
+    },
+    {
+      "id": 2,
+      "toastimonial": "Buttery goodness"
+    },
+    {
+      "id": 3,
+      "toastimonial": "The perfect array of colors"
+    },
+    {
+      "id": 4,
+      "toastimonial": "The object of all my desires"
+    },
+    {
+      "id": 5,
+      "toastimonial": "A delectable amount of rise"
+    },
+    {
+      "id": 6,
+      "toastimonial": "So much happiness in the palm of my hand"
+    },
+    {
+      "id": 7,
+      "toastimonial": "The sourest of Sourdough’s"
+    },
+    {
+      "id": 8,
+      "toastimonial": "Flaky goodness"
+    },
+    {
+      "id": 9,
+      "toastimonial": "TOASTTTTTTTTTT"
+    },
+    {
+      "id": 10,
+      "toastimonial": "It’s toast, how can it get better?"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "name": "PB & J",
+      "recipeDetails": "peanut butter, jam or jelly",
+      "notes": "A timeless classic"
+    },
+    {
+      "id": 2,
+      "name": "PB & Pickle",
+      "recipeDetails": "creamy peanut butter, dill pickle slices",
+      "notes": "Beautiful combo of sweet and salty. Nice textures."
+    },
+    {
+      "id": 3,
+      "name": "Avocado",
+      "recipeDetails": "Smashed avocado, salt & pepper, additional toppings as desired",
+      "notes": "Filling, savory, the perfect amount of bougie"
+    },
+    {
+      "id": 4,
+      "name": "Peach & Basil",
+      "recipeDetails": "whipped cream cheese, canned peach slices, fresh basil, a drizzle of balsamic",
+      "notes": "Too much? never."
+    },
+    {
+      "id": 5,
+      "name": "Cinnamon & Sugar",
+      "recipeDetails": "salted butter, cinnamon, sugar",
+      "notes": "A childhood favorite. Perfect for all ages."
+    }
+  ]
 }
