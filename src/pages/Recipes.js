@@ -13,20 +13,24 @@ function Recipes() {
       setRecipesArray(data)
     })
   }, [])
+
+  function handleAddRecipe(newRecipe) {
+    setRecipesArray([...recipesArray, newRecipe])
+  }
+  
+  function handleDeleteRecipe(deletedRecipe) {
+    const filteredArray = recipesArray.filter((recipe) => recipe.id !== deletedRecipe);
+    setRecipesArray(filteredArray)
+  }
  
   return (
     <div>
       <NavBar />
       <main>
-        <RecipeList recipesArray={recipesArray}/> 
 
-        <NewRecipeForm/>
-        {/* this will require a post http, and using state to be able to update this properly
-        will need to accept:
-        name
-        recipeDetails
-        notes
-        */}
+      <NewRecipeForm onAddRecipe={handleAddRecipe}/>
+      <RecipeList recipesArray={recipesArray} onDeleteRecipe={handleDeleteRecipe}/> 
+
       </main>
     </div>
   );
