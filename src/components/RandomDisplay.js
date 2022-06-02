@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './RandomDisplayCSS.css';
 
 function RandomDisplay() {
   const [ingredientObject, setIngredientObject] = useState({});
@@ -56,19 +57,31 @@ function RandomDisplay() {
   return (
     <div className='randomDisplay'>
       <h1>{secondTopping}</h1>
-      <button id='secondTopping' onClick={generateSecondTopping}>
+      <button
+        className='generateButton'
+        id='secondTopping'
+        onClick={generateSecondTopping}
+      >
         Second Topping
       </button>
       <h1>{firstTopping}</h1>
-      <button id='firstTopping' onClick={generateFirstTopping}>
+      <button
+        className='generateButton'
+        id='firstTopping'
+        onClick={generateFirstTopping}
+      >
         First Topping
       </button>
       <h1>{bread}</h1>
-      <button id='bread' onClick={generateBread}>
+      <button className='generateButton' id='bread' onClick={generateBread}>
         Bread
       </button>
       <h1>{toastLevel}</h1>
-      <button id='toastLevel' onClick={generateToastLevel}>
+      <button
+        className='generateButton'
+        id='toastLevel'
+        onClick={generateToastLevel}
+      >
         Toast Level
       </button>
     </div>

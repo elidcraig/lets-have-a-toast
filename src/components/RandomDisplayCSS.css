@@ -1,0 +1,48 @@
+header {
+    height: 72px;
+    font-size: 48px;
+    padding-top: 20px;
+    text-align: center;
+    color: #e5c955;
+    background-color: #c24242;
+}
+
+body {
+    background-color: #F2F5B1;
+    font-family: monospace;
+}
+
+.generateButton {
+    background-color: #78290F;
+    color: white;
+    font-family: monospace;
+}
+.navbar__links {
+    display: flex;
+    justify-content: center;
+    background-color: #e5c955;
+}
+
+.navbar__links a {
+    padding: 10px 10px;
+    margin: 10px 20px 10px;
+    font-size: 20px;
+    color: #c24242;
+    cursor: pointer;
+}
+
+.navbar__links a:hover {
+    color: #78290f;
+    transform: scale(1.1);
+}
+
+.navbar__links a.active {
+    color: #78290f;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
