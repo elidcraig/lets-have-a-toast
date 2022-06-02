@@ -1,26 +1,18 @@
-
-.randomDisplay {
-    background-color: #F2F5B1;
-    font-family: monospace;
-}
-
-/* h1 {
-    margin: 5px;
+h1 {
     text-align: center;
-} */
+}
 
 h2 {
-    text-align: center;
+    color: #987456;
 }
 
-.generatorBox {
+.random-display {
     height: 500px;
-    width: 950px;
-    margin: 5px;
+    width: 850px;
+    margin: 30px auto;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #987456;
     background-image: url("../bread-1300348.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,7 +27,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-.generateButton {
+.random-display__generate-button {
     margin: 5px;
     height: 40px;
     width: 100px;
