@@ -15,9 +15,9 @@ function FeaturedToast() {
       <h1>Featured Toast</h1>
       <h3>{featured.name}</h3>
       <div className='featured-toast__img-wrapper'>
-        <img src='https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/cottage-cheese-peach-cinnamon-honey-toast-combinations.jpg?quality=82&strip=all' />
+        <img alt='yummy toast' src='https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/cottage-cheese-peach-cinnamon-honey-toast-combinations.jpg?quality=82&strip=all' />
       </div>
-        <small>{featured.notes}</small>
+      <small>{featured.notes}</small>
       <p>{featured.recipeDetails}</p>
     </div>
   );
