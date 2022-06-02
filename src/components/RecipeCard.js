@@ -22,7 +22,7 @@ function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
       </div>
       <small>{notes}</small>
       <p>Recipe Details: {recipeDetails}</p>
-      <button onClick={handleDelete}>Remove Recipe</button>
+      <button className='recipe-card__button' onClick={handleDelete}>Remove Recipe</button>
   </motion.li>
   );
 }

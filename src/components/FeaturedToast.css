@@ -7,10 +7,6 @@
   border-radius: 30px;
 }
 
-.featured-toast:hover {
-  /* transform: scale(1.01); */
-}
-
 .featured-toast__img-wrapper {
   display: flex;
   justify-content: center;
@@ -18,4 +14,5 @@
 
 .featured-toast img {
   max-height: 50vh;
+  border-radius: 30px;
 }
