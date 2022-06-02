@@ -1,0 +1,7 @@
+.recipe-list {
+  margin: 30px 10vw;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  /*  Need rule to justify cards here */
+}
