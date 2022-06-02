@@ -1,4 +1,5 @@
 import React from 'react';
+import './RecipeList.css'
 import RecipeCard from "./RecipeCard.js"
 
 function RecipeList({recipesArray}) {
@@ -15,7 +16,7 @@ function RecipeList({recipesArray}) {
   })
 
   return (
-    <ul className="cards">{recipes}</ul>
+    <ul className="recipe-list">{recipes}</ul>
   );
 }
 
