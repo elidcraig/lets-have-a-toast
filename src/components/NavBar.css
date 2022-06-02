@@ -22,6 +22,7 @@ header {
 }
 .navbar__links a:hover {
   color: #78290f;
+  transform: scale(1.1);
 }
 .navbar__links a.active {
   color: #78290f;
