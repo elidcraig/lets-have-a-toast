@@ -2,15 +2,18 @@ import React from 'react';
 import './RecipeList.css'
 import RecipeCard from "./RecipeCard.js"
 
-function RecipeList({recipesArray}) {
+function RecipeList({recipesArray, onDeleteRecipe}) {
+  
   console.log(recipesArray)
   const recipes = recipesArray.map((recipe) => {
     return (
       <RecipeCard 
         key={recipe.id}
+        id={recipe.id}
         name={recipe.name}
         recipeDetails={recipe.recipeDetails}
         notes={recipe.notes}
+        onDeleteFunction={onDeleteRecipe}
         />
     )
   })

@@ -3,7 +3,17 @@ import { motion } from 'framer-motion';
 import './RecipeCard.css'
 // import logo from '../../public/toast-logo.png'
 
-function RecipeCard({name, recipeDetails, notes }) {
+function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
+  console.log(id)
+
+  function handleDelete() {
+    fetch(`http://localhost:3000/recipes/${id}`, {
+      method: "DELETE",
+    })
+    .then((r) => r.json())
+    .then(() => onDeleteFunction(id))
+  }
+
   return (
     <motion.li className="recipe-card" whileHover={{ scale: 1.05 }}>
       <h3>{name}</h3>
@@ -12,6 +22,7 @@ function RecipeCard({name, recipeDetails, notes }) {
       </div>
       <small>{notes}</small>
       <p>Recipe Details: {recipeDetails}</p>
+      <button onClick={handleDelete}>Remove Recipe</button>
   </motion.li>
   );
 }
