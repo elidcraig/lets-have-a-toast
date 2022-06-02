@@ -12,7 +12,8 @@ function FeaturedToast() {
   }, [])
 
   return (
-    <motion.div className='featured-toast' whileHover={{ scale: 1.02 }}>
+    <motion.div className='featured-toast' whileHover={{ scale: 1.02 }} initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }} viewport={{ once: true }}>
       <h1>Featured Toast</h1>
       <h3>{featured.name}</h3>
       <div className='featured-toast__img-wrapper'>
