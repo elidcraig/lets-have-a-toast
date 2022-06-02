@@ -6,11 +6,6 @@ function RecipeCard({name, recipeDetails, notes }) {
     <h4>{name}</h4>
     <p>Recipe Details: {recipeDetails}</p>
     <p>Notes: {notes}</p>
-    {true ? (
-      <button className="primary">In Stock</button>
-    ) : (
-      <button>Out of Stock</button>
-    )}
   </li>
   );
 }
