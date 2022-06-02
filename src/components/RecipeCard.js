@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './RecipeCard.css'
 // import logo from '../../public/toast-logo.png'
 
