@@ -4,10 +4,10 @@ import './RandomDisplayCSS.css';
 function RandomDisplay() {
   const [ingredientObject, setIngredientObject] = useState({});
 
-  const [toastLevel, setToastLevel] = useState('Golden');
-  const [secondTopping, setSecondTopping] = useState('Fresh fruit');
-  const [firstTopping, setFirstTopping] = useState('PB');
-  const [bread, setBread] = useState('Multigrain');
+  const [toastLevel, setToastLevel] = useState('golden');
+  const [secondTopping, setSecondTopping] = useState('fresh fruit');
+  const [firstTopping, setFirstTopping] = useState('pb');
+  const [bread, setBread] = useState('multigrain');
 
   function randomSelector() {
     const randomResult = {}[Math.floor(Math.random() * {}.length)];
@@ -56,6 +56,7 @@ function RandomDisplay() {
 
   return (
     <div className='randomDisplay'>
+      <header>Let's Have a Toast</header>
       <h1>{secondTopping}</h1>
       <button
         className='generateButton'
