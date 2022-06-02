@@ -19,10 +19,7 @@ function Toastimonials() {
   return (
     <motion.div className='toastimonials' whileHover={{ scale: 1.02 }}>
       <h1>TOASTIMONIALS</h1>
-      <Carousel className='toastimonials__list' navButtonsWrapperProps={{style: {
-            bottom: 'unset',
-            top: '10'
-        }}}>
+      <Carousel className='toastimonials__list'>
         {listItems}
       </Carousel>
     </motion.div>

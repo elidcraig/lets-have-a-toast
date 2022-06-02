@@ -1,5 +1,4 @@
 .toastimonials {
-  background-color: #987456;
   text-align: center;
   margin: 50px 20vw;
   border-style: solid;
@@ -9,6 +8,6 @@
 }
 
 .item__text {
-  background-color: #987456;
+  background-color: #F2F5B1;
   margin-top: 0px;
 }
