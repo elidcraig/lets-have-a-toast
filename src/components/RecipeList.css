@@ -3,5 +3,5 @@
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-  /*  Need rule to justify cards here */
+  justify-content: center;
 }
