@@ -1,4 +1,5 @@
 import React from 'react';
+import './RecipeCard.css'
 
 function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
   console.log(id)
@@ -12,12 +13,12 @@ function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
   }
 
   return (
-    <li className="card">
-    <h4>{name}</h4>
-    <button onClick={handleDelete}>Remove Recipe</button>
-    <p>Recipe Details: {recipeDetails}</p>
-    <p>Notes: {notes}</p>
-  </li>
+    <li className="recipe-card">
+      <h4>{name}</h4>
+      <button onClick={handleDelete}>Remove Recipe</button>
+      <p>Recipe Details: {recipeDetails}</p>
+      <p>Notes: {notes}</p>
+    </li>
   );
 }
 
