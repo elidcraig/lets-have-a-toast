@@ -15,20 +15,20 @@ function Recipes() {
   }, [])
  
   return (
-    <>
-    <NavBar />
-    <main>
-      <RecipeList recipesArray={recipesArray}/> 
+    <div>
+      <NavBar />
+      <main>
+        <RecipeList recipesArray={recipesArray}/> 
 
-      <NewRecipeForm/>
-      {/* this will require a post http, and using state to be able to update this properly
-      will need to accept:
-      name
-      recipeDetails
-      notes
-      */}
-    </main>
-    <>
+        <NewRecipeForm/>
+        {/* this will require a post http, and using state to be able to update this properly
+        will need to accept:
+        name
+        recipeDetails
+        notes
+        */}
+      </main>
+    </div>
   );
 }
 
