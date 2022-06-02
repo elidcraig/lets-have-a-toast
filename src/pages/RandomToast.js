@@ -6,7 +6,6 @@ function RandomToast() {
   return (
     <div>
       <RandomDisplay />
-      <RandomToastForm />
     </div>
   );
 }

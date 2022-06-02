@@ -55,22 +55,22 @@ function RandomDisplay() {
 
   return (
     <div className='randomDisplay'>
-      <button id='toastLevel' onClick={generateToastLevel}>
-        Toast Level
-      </button>
-      <h1>{toastLevel}</h1>
+      <h1>{secondTopping}</h1>
       <button id='secondTopping' onClick={generateSecondTopping}>
         Second Topping
       </button>
-      <h1>{secondTopping}</h1>
+      <h1>{firstTopping}</h1>
       <button id='firstTopping' onClick={generateFirstTopping}>
         First Topping
       </button>
-      <h1>{firstTopping}</h1>
+      <h1>{bread}</h1>
       <button id='bread' onClick={generateBread}>
         Bread
       </button>
-      <h1>{bread}</h1>
+      <h1>{toastLevel}</h1>
+      <button id='toastLevel' onClick={generateToastLevel}>
+        Toast Level
+      </button>
     </div>
   );
 }
