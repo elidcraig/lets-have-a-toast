@@ -8,7 +8,7 @@
   border-radius: 30px;
 }
 
-.toastimonials__card{
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+.item__text {
+  background-color: #987456;
+  margin-top: 0px;
 }
