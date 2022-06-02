@@ -4,7 +4,7 @@ import RecipeCard from "./RecipeCard.js"
 
 function RecipeList({recipesArray, onDeleteRecipe}) {
   
-  console.log(recipesArray)
+
   const recipes = recipesArray.map((recipe) => {
     return (
       <RecipeCard 

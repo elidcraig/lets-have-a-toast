@@ -1,0 +1,27 @@
+.new-recipe-form{
+    padding: 2rem 1rem;
+}
+
+.new-recipe-form form {
+    display: flex;
+    justify-content: center;
+}
+
+.new-recipe-form input {
+    margin-right: 2rem;
+    flex: 1;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+.form-button {
+    margin: 5px;
+    width: 100px;
+    background-color: #703642;
+    color: white;
+    font-family: monospace;
+ 
+    border-radius: 30px; 
+}
+

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./NewRecipeForm.css"
 
 function NewRecipeForm({onAddRecipe}) {
   const [recipeName, setRecipeName] = useState("")
@@ -46,11 +47,11 @@ function NewRecipeForm({onAddRecipe}) {
   return (
     <div className="new-recipe-form">
       <h2>New Recipe</h2>
-      <form onSubmit={handleSubmit}>
+      <form className="new-recipe-form" onSubmit={handleSubmit}>
         <input onChange={handleOnChangeName}type="text" name="name" placeholder="Recipe name" />
-        <input onChange={handleOnChangeDetails} type="text" name="recipe details" placeholder="recipe details" />
-        <input onChange={handleOnNotes} type="text" name="notes" placeholder="notes" />
-        <button type="submit">Add Recipe</button>
+        <input onChange={handleOnChangeDetails} type="text" name="recipe-details" placeholder="Recipe details" />
+        <input onChange={handleOnNotes} type="text" name="notes" placeholder="Notes" />
+        <button className="form-button" type="submit">Add Recipe</button>
       </form>
     </div>
   )
