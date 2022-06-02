@@ -7,3 +7,13 @@
   border-radius: 30px;
   text-align: center;
 }
+
+.recipe-card__img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.recipe-card img {
+  max-height: 40vh;
+  max-width: 25vw;
+}
