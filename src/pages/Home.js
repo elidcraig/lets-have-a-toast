@@ -1,7 +1,7 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import FeaturedToast from '../components/FeaturedToast';
-import Toastimonials from '../components/Toastimonials';
+import NavBar from '../components/NavBar.js';
+import FeaturedToast from '../components/FeaturedToast.js';
+import Toastimonials from '../components/Toastimonials.js';
 
 function Home() {
   return (
