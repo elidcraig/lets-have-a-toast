@@ -1,14 +1,11 @@
 .toastimonials {
+  background-color: #987456;
   text-align: center;
   margin: 50px 20vw;
   border-style: solid;
   border-width: 1px;
   border-color: black;
   border-radius: 30px;
-}
-
-.toastimonials:hover {
-  /* transform: scale(1.01); */
 }
 
 .toastimonials__card{
