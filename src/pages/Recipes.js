@@ -9,7 +9,6 @@ function Recipes() {
     fetch("http://localhost:3000/recipes")
     .then((r)=> r.json())
     .then((data)=> {
-      console.log(data)
       setRecipesArray(data)
     })
   }, [])

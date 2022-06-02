@@ -4,7 +4,7 @@ import './RecipeCard.css'
 // import logo from '../../public/toast-logo.png'
 
 function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
-  console.log(id)
+
 
   function handleDelete() {
     fetch(`http://localhost:3000/recipes/${id}`, {
