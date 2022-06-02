@@ -12,7 +12,21 @@ body {
     font-family: monospace;
 }
 
+h1 {
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
 .generatorBox {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     margin: 5px;
     background-color: #987456;
     border-style: solid;
@@ -22,9 +36,12 @@ body {
 }
 
 .generateButton {
-    background-color: #78290F;
+    margin: 5px;
+    background-color: #703642;
     color: white;
     font-family: monospace;
+    float: left;
+    border-radius: 30px;
 }
 .navbar__links {
     display: flex;

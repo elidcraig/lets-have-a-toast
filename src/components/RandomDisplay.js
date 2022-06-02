@@ -4,7 +4,9 @@ import './RandomDisplayCSS.css';
 function RandomDisplay() {
   const [ingredientObject, setIngredientObject] = useState({});
 
-  const [toastLevel, setToastLevel] = useState('golden');
+  const [toastLevel, setToastLevel] = useState(
+    'level 3: toast it to golden perfection'
+  );
   const [secondTopping, setSecondTopping] = useState('fresh fruit');
   const [firstTopping, setFirstTopping] = useState('pb');
   const [bread, setBread] = useState('multigrain');
@@ -56,35 +58,45 @@ function RandomDisplay() {
 
   return (
     <div className='randomDisplay'>
+      <h2>Feeling *burnt* out with decisions?</h2>
+      <h2> Let fate decide your next toasty snack!</h2>
       <div className='generatorBox'>
-        <h1>{secondTopping}</h1>
-        <button
-          className='generateButton'
-          id='secondTopping'
-          onClick={generateSecondTopping}
-        >
-          Second Topping
-        </button>
-        <h1>{firstTopping}</h1>
-        <button
-          className='generateButton'
-          id='firstTopping'
-          onClick={generateFirstTopping}
-        >
-          First Topping
-        </button>
-        <h1>{bread}</h1>
-        <button className='generateButton' id='bread' onClick={generateBread}>
-          Bread
-        </button>
-        <h1>{toastLevel}</h1>
-        <button
-          className='generateButton'
-          id='toastLevel'
-          onClick={generateToastLevel}
-        >
-          Toast Level
-        </button>
+        <div>
+          <button
+            className='generateButton'
+            id='secondTopping'
+            onClick={generateSecondTopping}
+          >
+            Second Topping
+          </button>{' '}
+          <h1>{secondTopping}</h1>
+        </div>
+        <div>
+          <button
+            className='generateButton'
+            id='firstTopping'
+            onClick={generateFirstTopping}
+          >
+            First Topping
+          </button>{' '}
+          <h1>{firstTopping}</h1>
+        </div>
+        <div>
+          <button className='generateButton' id='bread' onClick={generateBread}>
+            Bread
+          </button>{' '}
+          <h1>{bread}</h1>
+        </div>
+        <div>
+          <button
+            className='generateButton'
+            id='toastLevel'
+            onClick={generateToastLevel}
+          >
+            Toast Level
+          </button>{' '}
+          <h1>{toastLevel}</h1>
+        </div>
       </div>
     </div>
   );
