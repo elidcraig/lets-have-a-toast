@@ -7,6 +7,10 @@
   border-radius: 30px;
 }
 
+.toastimonials:hover {
+  transform: scale(1.01);
+}
+
 .toastimonials__card{
   margin-block-start: 1em;
   margin-block-end: 1em;
