@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './RecipeCard.css';
-// import logo from '../../public/toast-logo.png'
 
 function RecipeCard({ id, name, ingredients, notes, image, onDeleteFunction }) {
   function handleDelete() {

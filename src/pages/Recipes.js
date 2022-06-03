@@ -26,10 +26,8 @@ function Recipes() {
     <div>
       <NavBar />
       <main>
-
-      <NewRecipeForm onAddRecipe={handleAddRecipe}/>
-      <RecipeList recipesArray={recipesArray} onDeleteRecipe={handleDeleteRecipe}/> 
-
+        <NewRecipeForm onAddRecipe={handleAddRecipe}/>
+        <RecipeList recipesArray={recipesArray} onDeleteRecipe={handleDeleteRecipe}/> 
       </main>
     </div>
   );
