@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './RecipeCard.css';
-// import logo from '../../public/toast-logo.png'
 
 function RecipeCard({ id, name, ingredients, notes, image, onDeleteFunction }) {
   function handleDelete() {
@@ -16,7 +15,7 @@ function RecipeCard({ id, name, ingredients, notes, image, onDeleteFunction }) {
     <motion.li className='recipe-card' whileHover={{ scale: 1.05 }}>
       <h1>{name}</h1>
       <div className='recipe-card__img-wrapper'>
-        <img src={image} default='../toast-logo.png' alt='toast logo' />
+        <img src={image ? image : '../toast-logo.png'} alt='toast logo' />
       </div>
       <small>{notes}</small>
       <p>Ingredients: {ingredients}</p>
