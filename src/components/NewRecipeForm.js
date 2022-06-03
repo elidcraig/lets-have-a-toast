@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {motion} from 'framer-motion'
 import "./NewRecipeForm.css"
 
 function NewRecipeForm({onAddRecipe}) {
@@ -46,12 +47,12 @@ function NewRecipeForm({onAddRecipe}) {
 
   return (
     <div className="new-recipe-form">
-      <h2>New Recipe</h2>
-      <form className="new-recipe-form" onSubmit={handleSubmit}>
+      <h1>Add A New Recipe!</h1>
+      <form className="new-recipe-form__form" onSubmit={handleSubmit}>
         <input onChange={handleOnChangeName}type="text" name="name" placeholder="Recipe name" />
         <input onChange={handleOnChangeDetails} type="text" name="recipe-details" placeholder="Recipe details" />
         <input onChange={handleOnNotes} type="text" name="notes" placeholder="Notes" />
-        <button className="form-button" type="submit">Add Recipe</button>
+        <motion.button className="form-button" type="submit" whileHover={{ scale: 1.1 }}>Add Recipe</motion.button>
       </form>
     </div>
   )

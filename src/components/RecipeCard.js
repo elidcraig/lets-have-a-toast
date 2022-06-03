@@ -16,13 +16,13 @@ function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
 
   return (
     <motion.li className="recipe-card" whileHover={{ scale: 1.05 }}>
-      <h3>{name}</h3>
+      <h1>{name}</h1>
       <div className="recipe-card__img-wrapper">
         <img src='../toast-logo.png' alt='toast logo' />
       </div>
       <small>{notes}</small>
       <p>Recipe Details: {recipeDetails}</p>
-      <button className='recipe-card__button' onClick={handleDelete}>Remove Recipe</button>
+      <motion.button className='recipe-card__button' onClick={handleDelete} whileHover={{ scale: 1.1 }}>Remove Recipe</motion.button>
   </motion.li>
   );
 }

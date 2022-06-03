@@ -33,3 +33,15 @@ header {
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    font-size: 30px;
+  }
+}

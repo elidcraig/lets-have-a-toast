@@ -1,8 +1,13 @@
 .new-recipe-form{
-    padding: 2rem 1rem;
+    text-align: center;
+    padding: 1rem 1rem;
 }
 
-.new-recipe-form form {
+.new-recipe-form h1 {
+    margin: 10px 0px;
+}
+
+.new-recipe-form__form {
     display: flex;
     justify-content: center;
 }
@@ -12,16 +17,12 @@
     flex: 1;
 }
 
-button:hover {
-    transform: scale(1.1)
-}
 .form-button {
     margin: 5px;
     width: 100px;
     background-color: #703642;
     color: white;
     font-family: monospace;
- 
     border-radius: 30px; 
 }
 
