@@ -10,6 +10,11 @@ function RandomDisplay() {
   const [firstTopping, setFirstTopping] = useState('generate 1st topping');
   const [bread, setBread] = useState('generate bread type');
 
+  const [breadWasClicked, setBreadWasClicked] = useState(false)
+  const [levelWasClicked, setLevelWasClicked] = useState(false);
+  const [topOneWasClicked, setTopOneWasClicked] = useState(false);
+  const [topTwoWasClicked, setTopTwoWasClicked] = useState(false);
+
   useEffect(() => {
     fetch('http://localhost:3000/ingredients')
       .then((response) => response.json())
@@ -23,6 +28,10 @@ function RandomDisplay() {
       ];
 
     setToastLevel(randomResult);
+    setLevelWasClicked(true)
+    setTimeout(() => {
+      setLevelWasClicked(false);
+    }, 1000)
   }
   function generateSecondTopping(e) {
     const randomResult =
@@ -31,6 +40,10 @@ function RandomDisplay() {
       ];
 
     setSecondTopping(randomResult);
+    setTopTwoWasClicked(true)
+    setTimeout(() => {
+      setTopTwoWasClicked(false);
+    }, 1000)
   }
 
   function generateFirstTopping(e) {
@@ -40,6 +53,10 @@ function RandomDisplay() {
       ];
 
     setFirstTopping(randomResult);
+    setTopOneWasClicked(true)
+    setTimeout(() => {
+      setTopOneWasClicked(false);
+    }, 1000)
   }
 
   function generateBread(e) {
@@ -49,6 +66,10 @@ function RandomDisplay() {
       ];
 
     setBread(randomResult);
+    setBreadWasClicked(true)
+    setTimeout(() => {
+      setBreadWasClicked(false);
+    }, 1000)
   }
 
   return (
@@ -65,7 +86,7 @@ function RandomDisplay() {
           >
             Bread
           </motion.button>{' '}
-          <h2>{bread}</h2>
+          <motion.h2 animate={breadWasClicked ? {y: [0, 90, -70, 0]} : null}>{bread}</motion.h2>
         </div>
         <div>
           <motion.button
@@ -76,7 +97,7 @@ function RandomDisplay() {
           >
             Toast Level
           </motion.button>{' '}
-          <h2>{toastLevel}</h2>
+          <motion.h2 animate={levelWasClicked ? {y: [0, 90, -70, 0]} : null}>{toastLevel}</motion.h2>
         </div>
         <div className='generatorRow'>
           <motion.button
@@ -87,7 +108,7 @@ function RandomDisplay() {
           >
             First Topping
           </motion.button>{' '}
-          <h2>{firstTopping}</h2>
+          <motion.h2 animate={topOneWasClicked ? {y: [0, 90, -70, 0]} : null}>{firstTopping}</motion.h2>
         </div>
         <div className='generatorRow'>
           <motion.button
@@ -98,7 +119,7 @@ function RandomDisplay() {
           >
             Second Topping
           </motion.button>{' '}
-          <h2>{secondTopping}</h2>
+          <motion.h2 animate={topTwoWasClicked ? {y: [0, 90, -70, 0]} : null}>{secondTopping}</motion.h2>
         </div>
       </div>
     </div>
