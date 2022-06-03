@@ -47,8 +47,8 @@ function NewRecipeForm({onAddRecipe}) {
 
   return (
     <div className="new-recipe-form">
-      <h2>New Recipe</h2>
-      <form className="new-recipe-form" onSubmit={handleSubmit}>
+      <h1>Add A New Recipe!</h1>
+      <form className="new-recipe-form__form" onSubmit={handleSubmit}>
         <input onChange={handleOnChangeName}type="text" name="name" placeholder="Recipe name" />
         <input onChange={handleOnChangeDetails} type="text" name="recipe-details" placeholder="Recipe details" />
         <input onChange={handleOnNotes} type="text" name="notes" placeholder="Notes" />
