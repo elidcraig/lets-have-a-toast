@@ -58,7 +58,7 @@
     },
     {
       "id": 7,
-      "toastimonial": "The sourest of Sourdough’s"
+      "toastimonial": "The sourest of Sourdoughs"
     },
     {
       "id": 8,
@@ -76,33 +76,38 @@
   "recipes": [
     {
       "id": 1,
-      "name": "PB & J",
-      "recipeDetails": "peanut butter, jam or jelly",
-      "notes": "A timeless classic"
+      "name": "Cotton Candy Toast",
+      "ingredients": "jam, frosting, sprinkles",
+      "notes": "An explosion of fun",
+      "image": "https://www.tasteofhome.com/wp-content/uploads/2018/08/Princess-Toast_EXPS_DAI19_230060_B08_15_1b-21.jpg?w=1200"
     },
     {
       "id": 2,
       "name": "PB & Pickle",
-      "recipeDetails": "creamy peanut butter, dill pickle slices",
-      "notes": "Beautiful combo of sweet and salty. Nice textures."
+      "ingredients": "creamy peanut butter, dill pickle slices",
+      "notes": "Beautiful combo of sweet and salty. Nice textures.",
+      "image": "https://static01.nyt.com/images/2019/02/17/dining/17norecipe-peanutbutter/17norecipe-peanutbutter-articleLarge.jpg"
     },
     {
       "id": 3,
-      "name": "Avocado",
-      "recipeDetails": "Smashed avocado, salt & pepper, additional toppings as desired",
-      "notes": "Filling, savory, the perfect amount of bougie"
+      "name": "Avocado Toast",
+      "ingredients": "smashed avocado, salt & pepper, additional toppings as desired",
+      "notes": "Filling, savory, the perfect amount of bougie",
+      "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/avocado-egg-everything-bagel-seasoning-toast-combinations.jpg?quality=82&strip=all"
     },
     {
       "id": 4,
-      "name": "Peach & Basil",
-      "recipeDetails": "whipped cream cheese, canned peach slices, fresh basil, a drizzle of balsamic",
-      "notes": "Too much? never."
+      "name": "Cottage Cheese & Berries",
+      "ingredients": "cottage cheese, fresh berries, a drizzle of honey",
+      "notes": "bursting with flavor. 10/10",
+      "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/cottage-cheese-berries-honey-toast-combinations.jpg?quality=82&strip=all"
     },
     {
       "id": 5,
-      "name": "Cinnamon & Sugar",
-      "recipeDetails": "salted butter, cinnamon, sugar",
-      "notes": "A childhood favorite. Perfect for all ages."
+      "name": "Apples & PB",
+      "ingredients": "apples, peanut butter, honey, cinnamon & sugar",
+      "notes": "An upgrade on a childhood favorite. Perfect for all ages.",
+      "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/06/apple-peanut-butter-cinnamon-honey-toast-combinations.jpg?quality=82&strip=all"
     }
   ]
 }

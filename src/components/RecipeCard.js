@@ -1,29 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './RecipeCard.css'
+import './RecipeCard.css';
 // import logo from '../../public/toast-logo.png'
 
-function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
-
-
+function RecipeCard({ id, name, ingredients, notes, image, onDeleteFunction }) {
   function handleDelete() {
     fetch(`http://localhost:3000/recipes/${id}`, {
-      method: "DELETE",
+      method: 'DELETE',
     })
-    .then((r) => r.json())
-    .then(() => onDeleteFunction(id))
+      .then((r) => r.json())
+      .then(() => onDeleteFunction(id));
   }
 
   return (
-    <motion.li className="recipe-card" whileHover={{ scale: 1.05 }}>
+    <motion.li className='recipe-card' whileHover={{ scale: 1.05 }}>
       <h1>{name}</h1>
-      <div className="recipe-card__img-wrapper">
-        <img src='../toast-logo.png' alt='toast logo' />
+      <div className='recipe-card__img-wrapper'>
+        <img src={image} default='../toast-logo.png' alt='toast logo' />
       </div>
       <small>{notes}</small>
-      <p>Recipe Details: {recipeDetails}</p>
-      <motion.button className='recipe-card__button' onClick={handleDelete} whileHover={{ scale: 1.1 }}>Remove Recipe</motion.button>
-  </motion.li>
+      <p>Ingredients: {ingredients}</p>
+      <motion.button
+        className='recipe-card__button'
+        onClick={handleDelete}
+        whileHover={{ scale: 1.1 }}
+      >
+        Remove Recipe
+      </motion.button>
+    </motion.li>
   );
 }
 
