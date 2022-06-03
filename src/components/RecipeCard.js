@@ -22,7 +22,7 @@ function RecipeCard({id, name, recipeDetails, notes, onDeleteFunction }) {
       </div>
       <small>{notes}</small>
       <p>Recipe Details: {recipeDetails}</p>
-      <button className='recipe-card__button' onClick={handleDelete}>Remove Recipe</button>
+      <motion.button className='recipe-card__button' onClick={handleDelete} whileHover={{ scale: 1.1 }}>Remove Recipe</motion.button>
   </motion.li>
   );
 }
