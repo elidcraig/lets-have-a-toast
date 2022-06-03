@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import './RandomDisplayCSS.css';
 
 function RandomDisplay() {
@@ -56,43 +57,47 @@ function RandomDisplay() {
       <h1>Let fate decide your next toasty snack!</h1>
       <div className='random-display'>
         <div>
-          <button
+          <motion.button
             className='random-display__generate-button'
             id='bread'
+            whileHover={{scale: 1.08}}
             onClick={generateBread}
           >
             Bread
-          </button>{' '}
+          </motion.button>{' '}
           <h2>{bread}</h2>
         </div>
         <div>
-          <button
+          <motion.button
             className='random-display__generate-button'
             id='toastLevel'
+            whileHover={{scale: 1.08}}
             onClick={generateToastLevel}
           >
             Toast Level
-          </button>{' '}
+          </motion.button>{' '}
           <h2>{toastLevel}</h2>
         </div>
         <div className='generatorRow'>
-          <button
+          <motion.button
             className='random-display__generate-button'
             id='firstTopping'
+            whileHover={{scale: 1.08}}
             onClick={generateFirstTopping}
           >
             First Topping
-          </button>{' '}
+          </motion.button>{' '}
           <h2>{firstTopping}</h2>
         </div>
         <div className='generatorRow'>
-          <button
+          <motion.button
             className='random-display__generate-button'
             id='secondTopping'
+            whileHover={{scale: 1.08}}
             onClick={generateSecondTopping}
           >
             Second Topping
-          </button>{' '}
+          </motion.button>{' '}
           <h2>{secondTopping}</h2>
         </div>
       </div>
