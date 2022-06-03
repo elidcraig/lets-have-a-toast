@@ -18,7 +18,7 @@ function Toastimonials() {
   return (
     <motion.div className='toastimonials' whileHover={{ scale: 1.02 }}>
       <h1>TOASTIMONIALS</h1>
-      <Carousel className='toastimonials__list' indicators={false} interval={3000} navButtonsAlwaysInvisible={true} height={'75px'}>
+      <Carousel className='toastimonials__list' indicators={false} interval={2500} navButtonsAlwaysInvisible={true} height={'75px'}>
         {listItems}
       </Carousel>
     </motion.div>
